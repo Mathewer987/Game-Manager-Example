@@ -8,7 +8,12 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static GameManager Instance;
-    
+    public float score = 0;
+    public int vidas = 3;
+    public float record = 3f;
+
+
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
